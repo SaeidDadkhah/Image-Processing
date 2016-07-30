@@ -41,6 +41,8 @@ restored(restored > 1) = 1;
 noisy_psnr = 10 * log10(1 / (norm(original - noisy, 'fro') ^ 2 / H / W));
 restored_psnr = 10 * log10(1 / (norm(original - restored, 'fro') ^ 2 / H / W));
 
+isnr = 10 * log10((norm(original - noisy, 'fro').^2) / (norm(original - restored, 'fro').^2));
+display(isnr);
 
 %% visualization
 figure; imshow(original, 'border', 'tight');
