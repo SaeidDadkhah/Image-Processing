@@ -1,0 +1,8 @@
+1. 0, p, 1
+2. False
+3. Low-rank, sparce
+4. MOD
+5. 1, 2
+6. None
+7. U and V orthonormal, rank-1
+8. 16
